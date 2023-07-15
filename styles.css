@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 300px;
+    height: 300px;
+}
+
+[id^="cell-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#player-display {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: #0056b3;
+}
